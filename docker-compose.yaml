@@ -28,7 +28,7 @@ services:
       - HUB_HOST=hub
       - MODULE=search-module.xml
     volumes:
-      - ./search-result-new:/SoftwareTesting/Docker_Image/test-output
+      - ./output/search-result-new:/SoftwareTesting/Docker_Image/test-output
   book-flight-module:
     image: bharathgr/selenium-docker
     depends_on:
@@ -39,4 +39,4 @@ services:
       - HUB_HOST=hub
       - MODULE=book-flight-module.xml
     volumes:
-      - ./flight-search-new-result:/SoftwareTesting/Docker_Image/test-output
+      - ./output/flight-search-new-result:/SoftwareTesting/Docker_Image/test-output
